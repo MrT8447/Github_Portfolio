@@ -1,0 +1,33 @@
+:root {
+    background-color: rgb(41, 47, 54);
+    color: rgb(255, 255, 200);
+}
+
+.flex-container {
+    display: flex;
+    gap: 5px;
+}
+
+.card {
+    display: flex;
+    background-color: rgb(255, 255, 200);
+    border: 5px solid rgb(0, 0, 0);
+    height: 80px;
+    border-radius: 20px;
+    flex: 1;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: rgb(255, 100, 100);
+}
+
+nav a {
+    color: rgb(255, 255, 200);
+}
+
+nav a:hover {
+    color: rgb(255, 100, 100);
+}

@@ -6,12 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorite Games</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Einfach nur paar Games / Filme</h1>
-    <h2>Warum nicht? Whatever.</h2>
-    <hr>
+    <div id="navbar"></div>
 
+    <h1>Einfach nur paar Games / Filme</h1>
+    <hr>
     <h3>Duke Nukem 3D</h3>
     <p>Shake it, baby.</p>
 
@@ -20,5 +21,21 @@
 
     <h3>Sniper Elite 4</h3>
     <p>Mir fällt grad nix anderes ein.</p>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        });
+    </script>   
 </body>
 </html>

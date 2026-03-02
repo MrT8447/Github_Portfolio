@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1>Mein Lebenslauf</h1>
+    <hr>
+
+    <h4>Aktuell</h4>
+    <table>
+        <tr>
+            <td>01.2025 - Heute</td>
+            <td>GFN GmbH, Darmstadt</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Fachinformatiker für Anwendungsentwicklung (IHK)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Umschulung bis voraussichtlich 2027</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Berufserfahrungen</h4>
+    <table>
+        <tr>
+            <td>05.2024 - 01.2025</td>
+            <td>Berufliche Neuorientierung</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>05.2022 - 05.2024</td>
+            <td>Industrypart GmbH, Bensheim</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lagerfachkraft</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Wareneingang & Warenausgang</li>
+                    <li>Verantwortlich für einen Onlineshop</li>
+                </ul>
+            </td>
+        </tr>
+
+    </table>
+
+    <table>
+        <tr>
+            <td>11.2016 - 03.2022</td>
+            <td>Transerv 2000 GmbH & Co. KG, Bensheim</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Logistiker</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Wareneingang & Warenausgang</li>
+                    <li>Terminvereinbarungen mit Kunden für Onsite Reparatur-Einsätze</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>12.2015 - 06.2016</td>
+            <td>Transerv 2000 GmbH & Co. KG, Bensheim</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Logistiker</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Wareneingang & Warenausgang</li>
+                    <li>Umgang mit Gabelstapler & Flurförderzeugen</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>11.2014 - 12.2015</td>
+            <td>Workflow Plus GmbH, Bensheim </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lagermitarbeiter</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Wareneingang</li>
+                    <li>Consumer Electronics Reparaturen</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <h4>Ausbildungen</h4>
+    <table>
+        <tr>
+            <td>12.2011 - 02.2012</td>
+            <td>Bildungswerk der Hessischen Wirtschaft e.V., Bensheim </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Fachkraft für Lagerlogistik </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Modulare Teilqualifizierung</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>08.2002 - 01.2006</td>
+            <td>Autohaus Goss GmbH, Heppenheim</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Kraftfahrzeugmechaniker</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li>Abgeschlossene Berufsausbildung</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <h4>Zertifikate</h4>
+        <ul>
+            <li>EXIN Agile Scrum Foundation</li>
+            <li>PCEP - Certified Entry-Level Python Programmer</li>
+        </ul>
+    </table>
+
+    <table>
+        <h4>Führerschein</h4>
+        <ul>
+            <li>Gabelstapler</li>
+        </ul>
+    </table>
+
+    <h4>Sprachen</h4>
+    <ul>
+        <li>
+            <table>
+                <tr>
+                    <td>Deutsch</td>
+                    <td>Muttersprache</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr>
+                    <td>Englisch</td>
+                    <td>B1</td>
+                </tr>
+            </table>    
+        </li>
+    </ul>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- 
+6. Verwenden Sie HTML-Tags, um ein Profilfoto von Ihnen hinzuzufügen.
+7. Verwenden Sie relevante Anchor-Tags, um eine mehrseitige Website zu erstellen,
+    die andere Aspekte Ihres Lebenslaufs auflistet, wie z. B. Hobbys und Kontaktangaben.
+2.  Fügen Sie Ihre Website zu Ihrem GitHub hinzu, um mit dem Aufbau Ihres Portfolios zu beginnen.
+-->
+
