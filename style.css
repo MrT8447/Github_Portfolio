@@ -1,6 +1,7 @@
 :root {
     background-color: rgb(41, 47, 54);
     color: rgb(255, 255, 200);
+    font-family: consolas;
 }
 
 .flex-container {
@@ -30,4 +31,64 @@ nav a {
 
 nav a:hover {
     color: rgb(255, 100, 100);
+}
+
+footer {
+    background-color: rgb(150, 150, 150);
+    color: black;
+    text-align: center;
+}
+
+h1 h2 h3 h4 h5 {
+    margin: 10px 0px 20px 0px;
+}
+
+
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Abstand zwischen den Items */
+}
+
+.timeline-item {
+    display: flex;
+    gap: 1rem; /* Abstand zwischen Datum und Inhalt */
+}
+
+.timeline-date {
+    flex: 0 0 160px; /* feste Breite für die „Datumsspalte“ */
+}
+
+.timeline-content {
+    flex: 1; /* nimmt den restlichen Platz ein */
+}
+
+.activity {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1rem;
+    font-style: italic;
+}
+
+.position {
+    font-weight: bold;
+}
+
+
+
+
+.language-row {
+    display: flex;
+    justify-content: space-between; /* Abstand zwischen Sprache und Niveau */
+    padding: 0.2rem 0; /* optional: Abstand zwischen Zeilen */
+}
+
+.language {
+    font-weight: bold; /* Sprache fett */
+    flex: 0 0 150px;  /* feste Breite für linke Spalte */
+}
+
+.level {
+    flex: 1; /* nimmt den restlichen Platz ein */
+    text-align: left; /* Niveau rechtsbündig */
 }
