@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <h1>Kanban</h1>
+    <hr>
+
+    <div class="task-container">
+        <div id="ideas-column">Ideas
+            <input id="task-input" type="text" placeholder="Enter a task...">
+            <button id="add-button">Add</button>
+            <ul id="ideas-list"></ul>
+        </div>
+        <div id="todo-column">ToDo
+            
+            <ul id="todo-list"></ul>
+        </div>
+        <div id="doing-column">Doing
+            <ul id="doing-list"></ul>
+        </div>
+        <div id="review-column">Review
+            <ul id="review-list"></ul>
+        </div>
+        <div id="done-column">Done
+            <ul id="done-list"></ul>
+        </div>
+    </div>
+
+    <script src="Kanban.js"></script>
+
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        });
+
+        fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
